@@ -1,17 +1,31 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
 body {
     background-color: hsl(0, 0%, 8%);
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'fuente1', sans-serif;
     text-align: center;
 }
 
 .cont {
-    border: 5px white;
+    background-color: hsl(0, 0%, 12%);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+}
+.ubication {
+    color: hsl(75, 94%, 57%);
 }
 
 h1 {
-    font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
 }
 
 p {
