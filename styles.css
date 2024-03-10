@@ -71,9 +71,11 @@ a {
     padding: 15px;
     font-family: 'font_bold';
     margin: 15px;
+    transition: background-color 0.1s, color 0.1s;
 }
 
 a:hover {
     color: hsl(0, 0%, 8%);
     background-color: hsl(75, 94%, 57%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.774);
 }
