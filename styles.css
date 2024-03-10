@@ -13,6 +13,57 @@
     src: url(assets/fonts/static/Inter-Bold.ttf);
 }
 
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 10px hsl(75, 94%, 57%);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px hsl(75, 94%, 57%);
+    }
+}
+
+nav {
+    padding: 30px;
+}
+
+.switch {
+    background: hsl(0, 0%, 12%);
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none; 
+
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff
+    }
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+}
+
+
 body {
     background-color: hsl(0, 0%, 8%);
     font-family: 'font_base', sans-serif;
@@ -43,6 +94,7 @@ img {
     border-radius: 50%;
     overflow: hidden;
     margin-top: 15px;
+    animation: shadow-pulse 5s infinite;
 }
 
 .ubication {
@@ -50,6 +102,10 @@ img {
     font-family: 'font_semibold';
     margin-top: 5px;
     margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 25px;
 }
 
 h1 {
