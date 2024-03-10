@@ -55,6 +55,7 @@ nav {
 }
 
 .switch span {
+    font-family: 'font_base';
     width: 30px;
     height: 30px;
     line-height: 30px;
