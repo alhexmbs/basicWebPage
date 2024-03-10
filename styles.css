@@ -212,7 +212,6 @@ p {
     }
 }
 
-/* Estilos para dispositivos con ancho de pantalla desde 769px hasta 1024px (tablets y dispositivos en posición horizontal) */
 @media (min-width: 501px) and (max-width: 1023px) {
     .contenido {
         width: 20rem;
@@ -232,7 +231,6 @@ p {
     }
 }
 
-/* Estilos para dispositivos con ancho de pantalla mayor a 1024px (escritorio) */
 @media (min-width: 1024px) {
     .contenido {
         width: 40rem;
@@ -251,6 +249,21 @@ p {
         font-size: 1.2rem;
     }
 
+    img {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+
+@media (max-height: 500px) {
+    .contenido {
+        width: auto;
+        height: auto;
+        margin: 0 auto; /* Centra el elemento */
+    }
+
+    /* Otros estilos para elementos que necesitan ajustes en pantallas pequeñas */
     img {
         width: 30%;
         height: 30%;
