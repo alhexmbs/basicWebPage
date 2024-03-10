@@ -64,7 +64,7 @@ nav {
 }
 
 .switch.active {
-    background: hsl(75, 94%, 57%);
+    background: hsl(75, 71%, 46%);
     color: black;
     right: 0;
     left: unset;
@@ -81,6 +81,11 @@ body {
     background-color: hsl(0, 0%, 8%);
     font-family: 'font_base', sans-serif;
     text-align: center;
+    transition: .3s ease all;
+}
+
+body.light {
+    background-color: hsl(0, 0%, 100%);
 }
 
 .cont {
@@ -99,6 +104,13 @@ body {
     border-radius: 15px;
     color: hsl(0, 0%, 100%);
     padding: 30px;
+    transition: .3s ease all;
+
+}
+
+body.light .cont {
+    background-color:hsl(0, 0%, 77%);
+    color: hsl(0, 0%, 8%);
 }
 
 img {
@@ -119,6 +131,11 @@ img {
 
 .info {
     margin-bottom: 25px;
+    transition: .3s ease all;
+}
+
+body.light .info {
+    color: hsl(0, 0%, 8%);
 }
 
 h1 {
