@@ -1,3 +1,4 @@
+/*fuentes*/
 @font-face {
     font-family: 'font_base';
     src: url(assets/fonts/static/Inter-Regular.ttf);
@@ -13,6 +14,7 @@
     src: url(assets/fonts/static/Inter-Bold.ttf);
 }
 
+/*efectos de iluminación*/
 @keyframes shadow-pulse {
     0% {
         box-shadow: 0 0 10px hsl(75, 94%, 57%);
@@ -27,16 +29,17 @@
 
 @keyframes light-pulse {
     0% {
-        box-shadow: 0 0 10px #2D9596;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.863);
     }
     50% {
-        box-shadow: 0 0 20px rgba(14, 12, 12, 0.863);
+        box-shadow: 0 0 20px #2fa5a7;
     }
     100% {
-        box-shadow: 0 0 10px #2D9596;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.863);
     }
 }
 
+/*modo claro/oscuro*/
 nav {
     padding: 30px;
 }
@@ -63,7 +66,7 @@ nav {
 .switch::after {
     content: "";
     display: block;
-    width: 30px;
+    width: 60px;
     height: 30px;
     position: absolute;
     background: #f1f1f1;
@@ -87,7 +90,20 @@ nav {
     left: unset;
 }
 
+/*contenido*/
+.switch {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 300px; /* Ajusta la distancia desde la derecha */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
 
+body.light .switch {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 300px; /* Ajusta la distancia desde la derecha */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
 
 body {
     background-color: hsl(0, 0%, 8%);
@@ -119,6 +135,9 @@ body.light {
     transition: .3s ease all;
 
 }
+
+/*diseño adaptativo*/
+
 
 body.light .cont {
     background-color:#d2d3db;
@@ -156,7 +175,7 @@ body.light .ubication {
 }
 
 body.light .info {
-    color: hsl(0, 0%, 8%);
+    color: hsla(0, 0%, 9%, 0.89);
 }
 
 h1 {
@@ -166,7 +185,6 @@ h1 {
 p {
     color: hsl(0, 0%, 75%);
     font-size: 14px;
-    
 }
 
 a {
@@ -198,3 +216,4 @@ body.light a:hover {
     background-color: #76ABAE;
     box-shadow: 0 0 10px rgba(27, 24, 24, 0.774);
 }
+
