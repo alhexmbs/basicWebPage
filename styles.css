@@ -25,12 +25,24 @@
     }
 }
 
+@keyframes light-pulse {
+    0% {
+        box-shadow: 0 0 10px #2D9596;
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(14, 12, 12, 0.863);
+    }
+    100% {
+        box-shadow: 0 0 10px #2D9596;
+    }
+}
+
 nav {
     padding: 30px;
 }
 
 .switch {
-    background: hsl(75, 79%, 38%);
+    background: hsl(75, 78%, 29%);
     border-radius: 1000px;
     border: none;
     position: relative;
@@ -110,7 +122,7 @@ body.light {
 
 body.light .cont {
     background-color:#d2d3db;
-    color: #3d3d3c;
+    color: hsl(0, 0%, 8%);
 }
 
 img {
@@ -122,6 +134,10 @@ img {
     animation: shadow-pulse 5s infinite;
 }
 
+body.light img {
+    animation: light-pulse 5s infinite;
+}
+
 .ubication {
     color: hsl(75, 94%, 57%);
     font-family: 'font_semibold';
@@ -131,7 +147,7 @@ img {
 }
 
 body.light .ubication {
-    color: #0d0d0b;
+    color: #2D9596;
 }
 
 .info {
@@ -163,6 +179,7 @@ a {
     font-family: 'font_bold';
     margin: 15px;
     transition: background-color 0.1s, color 0.1s;
+    transition: .3s ease all;
 }
 
 body.light a {
@@ -174,8 +191,10 @@ a:hover {
     color: hsl(0, 0%, 8%);
     background-color: hsl(75, 94%, 57%);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.774);
+    transition: .3s ease all;
 }
 
 body.light a:hover {
     background-color: #76ABAE;
+    box-shadow: 0 0 10px rgba(27, 24, 24, 0.774);
 }
