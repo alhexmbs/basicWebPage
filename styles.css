@@ -198,40 +198,23 @@ p {
     font-size: 14px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 430px) and (max-height: 932px) {
     .contenido {
-        width: 15rem;
+        width: auto;
         height: auto;
         margin: 0 auto; /* Centra el elemento */
     }
-
-    /* Otros estilos para elementos que necesitan ajustes en pantallas pequeñas */
-    img {
-        width: 70%;
-        height: 70%;
-    }
 }
 
-@media (min-width: 501px) and (max-width: 1023px) {
+@media (min-width: 431px) and (max-width: 1024px) {
     .contenido {
-        width: 20rem;
-        height: flex;
+        width: auto;
+        height: auto;
         margin: 0 auto; /* Centra el elemento */
     }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-    a {
-        font-size: 0.7rem;
-    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     .contenido {
         width: 40rem;
         height: flex;
@@ -250,22 +233,13 @@ p {
     }
 
     img {
-        width: 30%;
-        height: 30%;
-    }
-}
-
-
-@media (max-height: 500px) {
-    .contenido {
-        width: auto;
-        height: auto;
-        margin: 0 auto; /* Centra el elemento */
+        width: 12rem;
+        height: 12rem;
     }
 
-    /* Otros estilos para elementos que necesitan ajustes en pantallas pequeñas */
-    img {
-        width: 30%;
-        height: 30%;
+    .switch {
+        width: 40px;
+        height: 40px;
     }
+    
 }
